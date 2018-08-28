@@ -81,7 +81,7 @@ def Pol_Tree():
 def VI(f):
     if f.right == None:
         return i[f.label]
-    elif f.label == '~':
+    elif f.label == '-':
         if VI(f.right) == 1:
             return 0
         else:
@@ -121,12 +121,12 @@ Form2 = Pol_Tree()
 for i in interps:
 	interpsForm1.append(VI(Form1))
 
-print "Los valores de verdad de la primer fórmula son:", interpsForm1
+print "Los valores de verdad de la primer fÃ³rmula son:", interpsForm1
 
 for i in interps:
 	interpsForm2.append(VI(Form2))
 
-print "Los valores de verdad de la segunda fórmula son:", interpsForm2
+print "Los valores de verdad de la segunda fÃ³rmula son:", interpsForm2
 
 review = True
 #Verificacion indice por indice de los valores de verdad.
@@ -135,9 +135,9 @@ for i in interpsForm1:
 		i = i + 1
 		review = True
 	else:
-		print "Note que los valores de verdad no son los mismo, por lo tanto, no es una tautología"
+		print "Note que los valores de verdad no son los mismo, por lo tanto, no es una tautologÃ­a"
 		review = False
 		break
 
 if(review == True):
-	print "Note que los valores de verdad son los mismos uno a uno, por lo tanto, es una tautología"
+	print "Note que los valores de verdad son los mismos uno a uno, por lo tanto, es una tautologÃ­a"
