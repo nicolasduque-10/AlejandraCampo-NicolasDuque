@@ -49,7 +49,7 @@ for i in interps:
 
 #Funcion que convierte de notacion polaca invertida a arboles
 def Pol_Tree():
-    f = raw_input('Ingrese una cadena: ') or 'rqpO>' 
+    f = raw_input('Ingrese la cadena en notación polaca inversa: ') or 'rqpO>' 
     #print "Cadena ingresada " + f
     cadena = list(f)
     #print cadena
